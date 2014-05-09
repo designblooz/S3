@@ -20,7 +20,9 @@ Template.S3.events({
 
 			reader.onload = function () {
 				fileData.data = new Uint8Array(reader.result);
-				Meteor.call("S3upload",fileData,context,callback);
+				Meteor.call("S3upload",fileData,context,callback, function(error, result) {
+					Session.set('imageUrl', result);
+				});				
 			};
 
 			reader.readAsArrayBuffer(file);
