@@ -1,7 +1,7 @@
 # Amazon S3 Uploader
 If you need this package to work pre-0.8.0 you will have to use version 1.2.5. S3 provides a simple way of uploading files to the Amazon S3 service. This is useful for uploading images and files that you want accesible to the public. S3 is built on [Knox](https://github.com/LearnBoost/knox), a module that becomes available server-side after installing this package.
 
-## Installation
+## Installation Test
 
 ``` sh
 $ mrt add s3
